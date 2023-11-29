@@ -6,7 +6,8 @@ import com.sujata.basic.entity.Customer;
 
 public class MainApp {
 	public static void displayMenu(Customer customer2)
-	{
+	{   
+		AtmApp atmApp = new AtmAppImpl();
 		Scanner sc = new Scanner(System.in);
 		
 		Integer choice=0;
@@ -33,18 +34,15 @@ public class MainApp {
 			
 			switch (choice) {
 			case 1:
-				System.out.println("");
-				
+				atmApp.checkBalance(customer2);
 				break;
 				
 			case 2:
-				System.out.println("");
-				
+				atmApp.withdraw(customer2);
 				break;
 				
-			case 3:
-				System.out.println("");
-				
+			case 3:				
+				atmApp.deposit(customer2);
 				break;
 				
 			case 4:
@@ -53,7 +51,7 @@ public class MainApp {
 				break;
 				
 			case 5:
-				System.out.println("");
+				atmApp.changePin(customer2);
 				
 				break;
 				

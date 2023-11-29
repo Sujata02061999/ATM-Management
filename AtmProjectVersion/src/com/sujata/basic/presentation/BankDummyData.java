@@ -36,7 +36,7 @@ public class BankDummyData {
         
         List<AtmCard> listAtmCard1 = List.of(atmCard1,atmCard2);
         
-        List<Customer> listCustomer1 = List.of(customer1, customer2, customer3,customer4);
+        List<Customer> listCustomer1 = List.of(customer1, customer2);
         
         
         
@@ -75,29 +75,29 @@ public class BankDummyData {
 		customer2.setBank(bank2);
 		customer2.setAccount(listAccount1);
 		
-		customer3.setCustomerId(234567891);
-		customer3.setCustomerName("Suhana Shaha");
-		customer3.setAddress("Beed 431123");
-		customer3.setCutomerContact("7896543456");
-		customer3.setDateOfBirth("01/02/1234");
-		customer3.setGender('F');
-		customer3.setEmailId("suhana@gmail.com");
-		customer3.setPanNumber("ABCD0012A");
-		customer3.setAddharNumber("123456789112");
-		customer3.setBank(bank1);
-		customer3.setAccount(listAccount1);
-		
-		customer4.setCustomerId(198765432);
-		customer4.setCustomerName("Suhana Shaha");
-		customer4.setAddress("Beed 431123");
-		customer4.setCutomerContact("7896543456");
-		customer4.setDateOfBirth("01/02/1234");
-		customer4.setGender('F');
-		customer4.setEmailId("suhana@gmail.com");
-		customer4.setPanNumber("ABCD0012A");
-		customer4.setAddharNumber("123456789112");
-		customer4.setBank(bank1);
-		customer4.setAccount(listAccount1);
+//		customer3.setCustomerId(234567891);
+//		customer3.setCustomerName("Suhana Shaha");
+//		customer3.setAddress("Beed 431123");
+//		customer3.setCutomerContact("7896543456");
+//		customer3.setDateOfBirth("01/02/1234");
+//		customer3.setGender('F');
+//		customer3.setEmailId("suhana@gmail.com");
+//		customer3.setPanNumber("ABCD0012A");
+//		customer3.setAddharNumber("123456789112");
+//		customer3.setBank(bank1);
+//		customer3.setAccount(listAccount1);
+//		
+//		customer4.setCustomerId(198765432);
+//		customer4.setCustomerName("Suhana Shaha");
+//		customer4.setAddress("Beed 431123");
+//		customer4.setCutomerContact("7896543456");
+//		customer4.setDateOfBirth("01/02/1234");
+//		customer4.setGender('F');
+//		customer4.setEmailId("suhana@gmail.com");
+//		customer4.setPanNumber("ABCD0012A");
+//		customer4.setAddharNumber("123456789112");
+//		customer4.setBank(bank1);
+//		customer4.setAccount(listAccount1);
 		
 		account1.setAccountNo("12345678911");
 		account1.setAccountOpenningDate(LocalDate.now().toString());
@@ -120,7 +120,7 @@ public class BankDummyData {
 		atmCard1.setCardNo("1234567891123456");
 		atmCard1.setCardPin("1234");
 		atmCard1.setCardStatus("Active");
-		atmCard1.setCardType("Visa");
+		atmCard1.setCardType("debit");
 		atmCard1.setCvvNo("123");
 		atmCard1.setIssueDate(LocalDate.now());
 		atmCard1.setExpiryDate(LocalDate.of(2025, 11, 22));
@@ -129,7 +129,7 @@ public class BankDummyData {
 		atmCard2.setCardNo("6543211987654321");
 		atmCard2.setCardPin("4321");
 		atmCard2.setCardStatus("Active");
-		atmCard2.setCardType("Visa");
+		atmCard2.setCardType("saving");
 		atmCard2.setCvvNo("321");
 		atmCard2.setIssueDate(LocalDate.now());
 		atmCard2.setExpiryDate(LocalDate.of(2025, 11, 22));
